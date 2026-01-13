@@ -21,6 +21,10 @@ return [
     'resend' => [
         'key' => env('RESEND_API_KEY'),
     ],
+  'weather' => [
+    'key' => env('WEATHER_API_KEY'),
+    'url' => env('WEATHER_API_URL'),
+],
 
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),
