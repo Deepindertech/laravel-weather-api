@@ -1,4 +1,3 @@
-php artisan --version
 stages:
   - build
   - test
@@ -7,7 +6,7 @@ composer_install:
   stage: build
   image: php:8.2
   before_script:
-    - apt-get update && apt-get install -y unzip git
+    - apt-get update && apt-get install -y unzip git curl
     - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
   script:
     - composer --version
