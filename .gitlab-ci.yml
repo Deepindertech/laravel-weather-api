@@ -1,0 +1,8 @@
+stages:
+  - test
+
+version_check:
+  stage: test
+  image: php:8.2
+  script:
+    - php -v
